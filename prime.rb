@@ -5,8 +5,8 @@
 #end
 
 def prime?(integer)
-  return false if integer < 2
-  return true if integer == 3 || integer == 2
+  return false if integer < 2 # retunrs false b/c any number less than 2 cannot be a prime number
+  return true if integer == 3 || integer == 2 # returns true b/c 3 and 2 are the lowest numbers that can be prime
     if (2...integer-1).any?{|i| integer % i == 0}
       false
     else
